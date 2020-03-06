@@ -1,11 +1,11 @@
-DROP DATABASE IF EXISTS Burgers_db
+DROP DATABASE IF EXISTS burgers_db
 
-CREATE DATABASE Burgers_db;
-USE Burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
-CREATE TABLE Burgers (
+CREATE TABLE burgers (
     id INT NOT NULL AUTO_INCREMENT,
-    Burger_name VARCHAR(255) NOT NULL,
+    burger_name VARCHAR(255) NOT NULL,
     devoured BOOLEAN DEFAULT false,
     date TIMESTAMP,
     PRIMARY KEY (id)

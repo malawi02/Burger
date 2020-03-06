@@ -1,4 +1,4 @@
-use Burgers_db;
+use burgers_db;
 
 INSERT INTO Burgers (id, Burger_name, devoured, date) VALUES
 (NULL, "Cheese Burger", FALSE, null),

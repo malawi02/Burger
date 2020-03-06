@@ -1,18 +1,18 @@
 const orm = ("../config/orm.js");
 
 
-const Burger = {
+const burger = {
 
     selectAll : (callback) => {
 
-        orm.selectAll("Burgers", (results)=> {
+        orm.selectAll("burgers", (results)=> {
             callback(results);
         });
     },
 
     insertOne : (cols, vals, callback) => {
 
-        orm.insertOne("Burgers", cols, vals, (result)=>{
+        orm.insertOne("burgers", cols, vals, (result)=>{
             console.log("Excuting Insert One Model");
             callback(result);
         });
@@ -22,7 +22,7 @@ const Burger = {
 
         console.log("Executing Update One Model");
 
-        orm.updateOne("Burgers", cols, vals, condition, (result)=> {
+        orm.updateOne("burgers", cols, vals, condition, (result)=> {
             console.log("Executing Second Declared CallBack");
             callback(result);
         });
@@ -32,4 +32,4 @@ const Burger = {
 
 
 
-module.exports = Burger;
+module.exports = burger;
