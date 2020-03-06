@@ -11,7 +11,7 @@ router.get("/", function(req, res) {
       handlebarsObject = {
         burger: data
       };
-      console.log("Diplayed burgers");
+      console.log("Displayed burgers");
       res.render("index", handlebarsObject);
     });
 
